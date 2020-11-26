@@ -1,0 +1,44 @@
+.banner {
+  padding: 30px 10px;
+  background-color: $color_celery;
+
+  @media screen and (min-width: 768px) {
+    background: url(#{$imagesPath}bg.jpg) no-repeat center;
+    background-size: cover;
+    padding: 81px 0 99px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 59px;
+    color: #FFFFFF;
+    max-width: 522px;
+    line-height: 73px;
+    margin-bottom: 30px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 34px;
+      line-height: 38px;
+    }
+  }
+
+  .text {
+    font-size: 15px;
+    max-width: 283px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+  }
+
+  .btn-banner {
+    font-size: 15px;
+    padding: 15px;
+    width: 237px;
+    margin: initial;
+
+    img {
+      width: 36px;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+}

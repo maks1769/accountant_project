@@ -1,0 +1,203 @@
+.detail {
+  padding-top: 40px;
+
+  .wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+
+  &__part {
+    @media screen and (min-width: 768px) {
+      width: 50%;
+    }
+
+    .main-title {
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+    }
+
+    &.info {
+      img {
+        max-width: 100%;
+        margin-top: 13px;
+        margin-bottom: 15px;
+      }
+
+      p {
+
+      }
+    }
+
+    &.actions {
+      @media screen and (min-width: 768px) {
+        padding: 15px 25px;
+      }
+
+      .price {
+        color: #8DB82C;
+        font-weight: bold;
+        font-size: 30px;
+
+        &__old {
+          text-decoration: line-through;
+          font-size: 26px;
+          color: #a9a9a9;
+        }
+      }
+
+      .weight {
+        width: 50%;
+        margin-bottom: 15px;
+
+        @media screen and (min-width: 768px) {
+          width: 40%;
+        }
+
+        &__label {
+          font-size: 14px;
+          padding: 13px 0 7px;
+          font-weight: bold;
+          text-align: left;
+        }
+
+        &__select {
+          height: 37px;
+          width: 100%;
+          border: 1px solid black;
+          font-size: 14px;
+          color: #000;
+          border-radius: 5px;
+          appearance: none;
+          text-indent: 6px;
+          background-color: rgb(221, 221, 221);
+        }
+      }
+
+      .quantity-switch {
+        margin: 20px 0;
+      }
+
+      .price-final {
+        font-size: 18px;
+        color: #8DB82C;
+        padding: 15px 0 23px;
+      }
+
+      .btn-product {
+        width: 237px;
+        height: 45px;
+        padding: 10px;
+
+        @media screen and (max-width: 768px) {
+          margin: 0 auto 20px;
+          display: block;
+        }
+
+        img {
+          max-width: 19px;
+          margin-right: 6px;
+          vertical-align: middle;
+        }
+
+        &.one-click {
+          background-color: #9C9C9C;
+
+          @media screen and (min-width: 1024px) {
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .description {
+        padding: 57px 0 28px;
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 768px) {
+          padding: 0;
+          margin: 40px 0;
+        }
+      }
+
+      .energy {
+        @media screen and (min-width: 768px) {
+          display: flex;
+        }
+
+        .card {
+          text-align: center;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          min-width: 100px;
+
+          @media screen and (max-width: 768px) {
+            max-width: 80%;
+            margin: 0 auto 25px;
+          }
+
+          &__title {
+            border: 4px solid #b1d235;
+            border-bottom: 0;
+            padding-top: 8px;
+            font-weight: 600;
+            color: #333;
+            padding-bottom: 10px;
+          }
+
+          &__val {
+            border: 4px solid #b1d235;
+            border-bottom: 0;
+            border-top: 0;
+            padding-bottom: 10px;
+            padding-left: 0;
+            margin: 0;
+          }
+
+          &__percent {
+            padding: 16px 0 16px;
+            line-height: 16px;
+            color: #fff;
+            background: #b1d235;
+            border-radius: 0 0 20px 20px;
+            margin: 0;
+            margin-bottom: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .text-desk {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    white-space: pre-line;
+    padding: 10px 0;
+
+    @media screen and (min-width: 568px) {
+      display: initial;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: none;
+    }
+  }
+
+  .text-mobile {
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    white-space: pre-line;
+    padding: 10px 0;
+
+    @media screen and (min-width: 568px) {
+      display: none;
+    }
+
+    @media screen and (max-width: 568px) {
+      display: initial;
+    }
+  }
+}

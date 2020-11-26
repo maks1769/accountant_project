@@ -1,0 +1,128 @@
+.basket {
+  table {
+    .desktop {
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    th {
+      &:not(:nth-child(2)) {
+        text-align: center;
+      }
+    }
+
+    tr {
+      @media screen and (max-width: 992px) {
+        border: 1px solid #000;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        max-width: 80%;
+        margin: 0 auto 20px;
+
+        td {
+          display: flex;
+          padding: 15px;
+
+          .quantity-switch {
+            margin-left: initial;
+          }
+        }
+      }
+
+      @media screen and (max-width: 570px) {
+        max-width: 95%;
+      }
+    }
+
+    .th-mobile {
+      font-weight: 700;
+      width: 30%;
+
+      @media screen and (min-width: 992px) {
+        display: none;
+      }
+
+      @media screen and (max-width: 570px) {
+        width: 50%;
+      }
+    }
+  }
+
+ .good {
+   &__delete {
+     position: relative;
+     color: transparent;
+     outline: none;
+
+     &:hover {
+       cursor: pointer;
+     }
+
+     &:before,
+     &:after {
+       position: absolute;
+       content: '';
+       top: 0;
+       width: 15px;
+       height: 2px;
+       background-color: #000;
+     }
+
+     &:before {
+       transform: rotate(45deg);
+       left: 6px;
+     }
+
+     &:after {
+       transform: rotate(-45deg);
+     }
+   }
+
+   &__name {
+     display: flex;
+     align-items: center;
+
+     @media screen and (max-width: 992px) {
+       flex-direction: column;
+     }
+
+     p {
+       margin-left: 25px;
+       color: #8DB82C;
+       font-size: 18px;
+       font-weight: 700;
+
+       @media screen and (max-width: 992px) {
+         margin-top: 10px;
+         margin-left: initial;
+       }
+     }
+   }
+ }
+
+  .data {
+    text-align: right;
+
+    .weight {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+
+    .sum {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 15px;
+
+      span {
+        color: #8DB82C;
+      }
+    }
+
+    .btn {
+      width: 240px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@function image($file) {
+  @return url($imagesPath + $file);
+}
+
+@function font($file) {
+  @return url($fontsPath +  $file);
+}
+
+@function userfile($file) {
+  @return url($usersFilesPath + $file);
+}
+
+
+@function asset($type, $file) {
+    @if $type == image  {
+        @return  url($imagesPath + $file);
+    } @else if $type == font { 
+        @return url($fontsPath +  $file);
+    } @else if $type ==  userfile {
+         @return url($usersFilesPath +  $file);       
+    }
+}
+
+

@@ -1,0 +1,90 @@
+.footer {
+  padding: 20px 0;
+  background-color: $color_twine;
+
+  @media screen and (min-width: 768px) {
+    background: url(#{$imagesPath}bg2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+  }
+
+  .wrapper {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logos {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 210px;
+      margin-bottom: 40px;
+
+      @media screen and (max-width: 768px) {
+        width: 250px;
+        margin: 0 auto 20px;
+      }
+    }
+  }
+
+  &__social {
+    @media screen and (max-width: 768px) {
+      margin-left: 30px;
+    }
+
+    a {
+      margin-right: 35px;
+    }
+
+    img {
+      height: 17px;
+    }
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__list {
+    font-size: 14px;
+    color: #FFFFFF;
+    list-style-type: none;
+    border-left: 1px solid white;
+    padding: 13px 0 0 37px;
+    line-height: 36px;
+    margin-left: 50px;
+
+    @media screen and (max-width: 768px) {
+      border-left: initial;
+      padding: 0;
+      margin: 0 20px;
+    }
+
+    &.menu-2 {
+      @media screen and (max-width: 768px) {
+        border-left: 1px solid white;
+        padding-left: 20px;
+      }
+    }
+
+    a {
+      color: #FFFFFF;
+    }
+  }
+
+  &__copy {
+    flex-basis: 100%;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-top: 1px solid white;
+    margin-top: 34px;
+    max-width: 620px;
+    padding: 26px 0 0 32px;
+  }
+}
