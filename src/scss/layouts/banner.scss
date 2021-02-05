@@ -1,44 +1,73 @@
 .banner {
-  padding: 30px 10px;
-  background-color: $color_celery;
+  padding: 300px 0 60px;
+  text-align: center;
+  background-image: url(#{$imagesPath}banner.png);
+  background-position: 50% 50%;
 
   @media screen and (min-width: 768px) {
-    background: url(#{$imagesPath}bg.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    padding: 81px 0 99px;
+  }
+
+  &__block {
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 111, 220, 0.7);
+    text-align: center;
+    margin: 0 auto 70px;
+    font-weight: bold;
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 0;
+    }
   }
 
   .title {
-    font-weight: bold;
-    font-size: 59px;
-    color: #FFFFFF;
-    max-width: 522px;
-    line-height: 73px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 2;
+    letter-spacing: .01em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 768px) {
-      font-size: 34px;
-      line-height: 38px;
+      font-size: 16px;
+      line-height: 2;
     }
   }
 
   .text {
-    font-size: 15px;
-    max-width: 283px;
-    line-height: 1.8;
-    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 1.5;
+    letter-spacing: .01em;
+    color: #fff;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+      line-height: 2;
+      margin-bottom: 20px;
+    }
   }
 
-  .btn-banner {
-    font-size: 15px;
-    padding: 15px;
-    width: 237px;
-    margin: initial;
+  &__btn {
+    font-family: $font_family_more;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.6;
 
-    img {
-      width: 36px;
-      margin-right: 10px;
-      vertical-align: middle;
+    &.desk {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+
+    &.mob {
+      display: none;
+      @media screen and (max-width: 768px) {
+        display: initial;
+      }
     }
   }
 }

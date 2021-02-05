@@ -1,0 +1,54 @@
+.request {
+  padding: 0;
+  background-color: #2F80ED;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .wrapper {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__img {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-family: $font_family_more;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.8;
+    color: #FFF;
+    margin-left: 55px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+      margin-left: 20px;
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-left: initial;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}

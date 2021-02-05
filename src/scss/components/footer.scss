@@ -1,90 +1,62 @@
 .footer {
   padding: 20px 0;
-  background-color: $color_twine;
-
-  @media screen and (min-width: 768px) {
-    background: url(#{$imagesPath}bg2.jpg) no-repeat center;
-    background-size: cover;
-    padding: 40px 0;
-  }
+  background-color: #F5F5F5;
 
   .wrapper {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
     }
   }
 
-  &__logos {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    color: #1C1C1C;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 15px;
+      margin-left: -50px;
     }
 
     .logo {
-      width: 210px;
-      margin-bottom: 40px;
+      width: 165px;
 
-      @media screen and (max-width: 768px) {
-        width: 250px;
-        margin: 0 auto 20px;
+      @media screen and (max-width: 320px) {
+        width: 120px;
       }
-    }
-  }
 
-  &__social {
-    @media screen and (max-width: 768px) {
-      margin-left: 30px;
-    }
-
-    a {
-      margin-right: 35px;
-    }
-
-    img {
-      height: 17px;
-    }
-  }
-
-  &__block {
-    display: flex;
-  }
-
-  &__list {
-    font-size: 14px;
-    color: #FFFFFF;
-    list-style-type: none;
-    border-left: 1px solid white;
-    padding: 13px 0 0 37px;
-    line-height: 36px;
-    margin-left: 50px;
-
-    @media screen and (max-width: 768px) {
-      border-left: initial;
-      padding: 0;
-      margin: 0 20px;
-    }
-
-    &.menu-2 {
-      @media screen and (max-width: 768px) {
-        border-left: 1px solid white;
-        padding-left: 20px;
+      &__item {
+        display: flex;
+        align-items: center;
       }
-    }
 
-    a {
-      color: #FFFFFF;
+      &__name {
+        font-family: $font_family_special;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: .06em;
+        margin-left: 15px;
+        width: 30px;
+      }
     }
   }
 
   &__copy {
-    flex-basis: 100%;
-    font-size: 14px;
-    color: #FFFFFF;
-    border-top: 1px solid white;
-    margin-top: 34px;
-    max-width: 620px;
-    padding: 26px 0 0 32px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.8;
+    color: #000;
   }
 }

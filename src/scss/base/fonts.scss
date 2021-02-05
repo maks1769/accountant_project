@@ -1,39 +1,62 @@
 @font-face {
-  font-family: "GothamProRegular";
-  src: url("../../fonts/GothamProRegular/GothamProRegular.eot");
-  src: url("../../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
-  url("../../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
-  url("../../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-family: 'RobotoRegular';
+  src: url(#{$fontsPath}Roboto/Roboto-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "GothamProBold";
-  src: url("../../fonts/GothamProBold/GothamProBold.eot");
-  src: url("../../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
-  url("../../fonts/GothamProBold/GothamProBold.woff") format("woff"),
-  url("../../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-family: 'RobotoThin';
+  src: url(#{$fontsPath}Roboto/Roboto-Thin.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "GothamProMedium";
-  src: url("../../fonts/GothamProMedium/GothamProMedium.eot");
-  src: url("../../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
-  url("../../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
-  url("../../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-family: 'RobotoMedium';
+  src: url(#{$fontsPath}Roboto/Roboto-Medium.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "GothamProLight";
-  src: url("../../fonts/GothamProLight/GothamProLight.eot");
-  src: url("../../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
-  url("../../fonts/GothamProLight/GothamProLight.woff") format("woff"),
-  url("../../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+  font-family: 'RobotoLight';
+  src: url(#{$fontsPath}Roboto/Roboto-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(#{$fontsPath}Roboto/Roboto-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBlack';
+  src: url(#{$fontsPath}Roboto/Roboto-Black.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'YanoneKaffeesatz';
+  src: url(#{$fontsPath}YanoneKaffeesatz/YanoneKaffeesatz-VariableFont_wght.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PTSans';
+  src: url(#{$fontsPath}PTSans/PTSans-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(#{$fontsPath}Poppins/Poppins-Regular.ttf) format('truetype');
   font-style: normal;
   font-weight: normal;
 }

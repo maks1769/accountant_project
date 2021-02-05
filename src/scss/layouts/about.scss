@@ -1,69 +1,62 @@
 .about {
-  padding: 40px 0;
+  padding: 100px 0;
+  background-image: url(#{$imagesPath}about-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-  &__list {
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 26px rgba(0, 0, 0, .15);
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 40px 25px;
+    }
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.8;
+    color: #1C1C1C;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 414px) {
+      font-size: 28px;
     }
   }
 
   &__item {
-    background: rgba(255, 255, 255, 1);
-    border: 1px solid #797979;
-    border-radius: 11px;
-    text-align: center;
-    padding: 28px 0 0;
-    max-width: 380px;
-    margin: 10px;
-    min-height: 222px;
-    color: #000000;
-    transition: .5s;
-    width: 31%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      width: 30%;
+    .bold {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 2.2;
+      color: #007CF4;
+      margin-bottom: 10px;
     }
 
-    &:hover {
-      background-color: #8DB82C;
-      color: white;
-      transition: .5s;
+    .content {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 2.1;
 
-      .about__img {
-        fill: #fff;
+      @media screen and (max-width: 414px) {
+        font-size: 15px;
       }
     }
-
-    @media screen and (max-width: 568px) {
-      width: 100%;
-      min-height: 200px;
-      margin: 10px 0;
-    }
-  }
-
-  &__img {
-    height: 44px;
-    fill: rebeccapurple;
-  }
-
-  &__title {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
-    text-align: center;
-    margin: 15px 0;
-    text-transform: uppercase;
-  }
-
-  &__text {
-    font-size: 15px;
-    max-width: 265px;
-    margin: 0 auto;
-    line-height: 1.5;
   }
 }
